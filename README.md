@@ -49,9 +49,9 @@ Overall, the PWA Text Editor project is perfect for writers, journalists, blogge
 ## Progressive Web Applications (PWA): Text Editor Demo Video
 ---
 
-![2023-02-15 15_26_14-Insomnia]()
-![2023-02-15 15_37_43-]()
-![2023-02-15 15_24_57-]()
+![]()
+![]()
+![]()
 
 
 
