@@ -39,13 +39,59 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      
+      new HtmlWebpackPlugin({
+        template: './src/index.html',
+        title: 'JATE',
+      }),
+      // Inject the manifest into the HTML page.
+      new InjectManifest({
+        swSrc: './src/sw.js',
+        swDest: 'sw.js',
+      }),
+
+      // TODO: Add the WebpackPwaManifest plugin.
+
+      new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
+        name: 'Just Another Text Editor',
+        short_name: 'JATE',
+        description: 'A simple text editor',
+        background_color: '#01579b',
+        theme_color: '#ffffff',
+        start_url: '/',
+        publicPath: '/',
+        icons: [
+          {
+            src: path.resolve('src/images/icon-512x512.png'),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
+          },
+        ],
+      }),
     ],
 
-    module: {
-      rules: [
-        
-      ],
-    },
-  };
-};
+        module: {
+            // TODO: Add babel-loader to the rules array.
+            // CSS loader configuration
+          rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+            },
+            {
+              test: /\.m?js$/,
+              exclude: /node_modules/,
+              // TODO: Add babel-loader to the use array.
+              use: {
+                loader: 'babel-loader',
+                options: {
+                  presets: ['@babel/preset-env'],
+                  plugins: ['@babel/plugin-proposal-object-rest-spread','@babel/transform-runtime'],
+                },
+              },
+            },
+          ],
+        },
+      };
+    };
