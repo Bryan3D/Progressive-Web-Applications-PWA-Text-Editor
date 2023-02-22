@@ -8,10 +8,13 @@
   "description": "JATE- The Progressive Web Applications (PWA): Text Editor project is a web-based text editor designed to provide a fast, responsive, and user-friendly editing experience. It is built using the latest web technologies, including HTML5, CSS3, and JavaScript, and can be installed as a standalone application on any device with a modern web browser",
   "main": "server/server.js",
   "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack --mode production",
+    "start": "webpack --watch",
     "server": "nodemon server.js --ignore client"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bryan A Quero",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
