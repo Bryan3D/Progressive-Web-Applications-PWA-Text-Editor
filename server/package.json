@@ -1,18 +1,22 @@
 {
-    "name": "JATE",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-        "server": "nodemon server.js --ignore client"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "express": "^4.17.1"
-    },
-    "devDependencies": {
-        "nodemon": "^2.0.4"
-    }
+  "name": "JATE",
+  "version": "1.0.0",
+  "engines": {
+    "node": "18.13.0",
+    "npm": "8.19.3"
+  },
+  "description": "JATE- The Progressive Web Applications (PWA): Text Editor project is a web-based text editor designed to provide a fast, responsive, and user-friendly editing experience. It is built using the latest web technologies, including HTML5, CSS3, and JavaScript, and can be installed as a standalone application on any device with a modern web browser",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js --ignore client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
