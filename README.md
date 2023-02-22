@@ -40,7 +40,7 @@ Overall, the PWA Text Editor project is perfect for writers, journalists, blogge
 - dotenv
 - express
 - Webpack
-- Heruku
+- Heroku
 
 ---
 
