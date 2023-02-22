@@ -28,7 +28,7 @@ const babelLoader = {
 };
 
 module.exports = () => {
-  return {
+ /*  return {
     mode: 'development',
     entry: {
       main: './src/js/index.js',
@@ -40,7 +40,30 @@ module.exports = () => {
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
+    } */
+  return {
+  entry: "./src/js/main.js",
+    output: {
+      path: __dirname + '/dist/',
+      filename: "bundle.js",
+        publicPath: '/'
+  },
+  devServer: {
+    inline: false,
+      contentBase: "./dist",
     },
+  module: {
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015', 'react']
+        }
+      }
+    ]
+  },
     plugins: [
       new HtmlWebpackPlugin({
         template: './src/index.html',
