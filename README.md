@@ -40,7 +40,6 @@ Overall, the PWA Text Editor project is perfect for writers, journalists, blogge
 - Express.js
 - Node
 - dotenv
-- express
 - Webpack
 - Heroku
 
