@@ -57,7 +57,7 @@ Overall, the PWA Text Editor project is perfect for writers, journalists, blogge
 ![Alt text](Screenshots/2023-02-23%2011_56_13-the-progressive-web-app%20%C2%B7%20Heroku-git%20_%20Heroku.png)
 
 
-<<<<<<< HEAD
+---
 ## Heroku Progressive Web Applications (PWA): Text Editor URL Link
 [Click Here](https://the-progressive-web-app.herokuapp.com/)
 =======
