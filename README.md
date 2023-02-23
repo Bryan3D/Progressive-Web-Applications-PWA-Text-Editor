@@ -8,8 +8,8 @@
   - [Table of Contents](#table-of-contents)
   - [Project description](#project-description)
   - [Installation and Test Instructions](#installation-and-test-instructions)
-  - [Progressive Web Applications (PWA): Text Editor Demo Video](#progressive-web-applications-pwa-text-editor-demo-video)
-  - [Progressive Web Applications (PWA): Text Editor URL Link](#progressive-web-applications-pwa-text-editor-url-link)
+  - [Progressive Web Applications (PWA): Text Editor Demo Video and Images](#progressive-web-applications-pwa-text-editor-demo-video-and-images)
+  - [Heroku Progressive Web Applications (PWA): Text Editor URL Link](#heroku-progressive-web-applications-pwa-text-editor-url-link)
   - [Inquire](#inquire)
   - [MIT License](#mit-license)
 
@@ -46,19 +46,17 @@ Overall, the PWA Text Editor project is perfect for writers, journalists, blogge
 
 
 
-## Progressive Web Applications (PWA): Text Editor Demo Video
+## Progressive Web Applications (PWA): Text Editor Demo Video and Images
 ---
 
-![]()
-![]()
-![]()
+![Alt text](Screenshots/2023-02-23%2011_53_17-J.A.T.E.png)
+![Alt text](Screenshots/2023-02-23%2011_54_36-manifest.json%20-%20Progressive-Web-Applications-PWA-Text-Editor%20-%20Visual%20Studio%20Cod.png)
+![Alt text](Screenshots/2023-02-23%2011_55_33-manifest.json%20-%20Progressive-Web-Applications-PWA-Text-Editor%20-%20Visual%20Studio%20Cod.png)
+![Alt text](Screenshots/2023-02-23%2011_56_13-the-progressive-web-app%20%C2%B7%20Heroku-git%20_%20Heroku.png)
 
 
-
-
-
-## Progressive Web Applications (PWA): Text Editor URL Link
-[Click Here](https://bryan3d.github.io/Challenge18SocialNetworkApi/)
+## Heroku Progressive Web Applications (PWA): Text Editor URL Link
+[Click Here](https://the-progressive-web-app.herokuapp.com/)
 
 
 ---
