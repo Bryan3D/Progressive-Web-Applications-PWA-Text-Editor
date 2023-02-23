@@ -58,7 +58,7 @@ Overall, the PWA Text Editor project is perfect for writers, journalists, blogge
 
 
 ## Progressive Web Applications (PWA): Text Editor URL Link
-[Click Here](https://bryan3d.github.io/Challenge18SocialNetworkApi/)
+[Click Here](https://bryan3d.github.io/Progressive-Web-Applications-PWA-Text-Editor/)
 
 
 ---
