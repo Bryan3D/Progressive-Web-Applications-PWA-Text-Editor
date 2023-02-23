@@ -12,40 +12,42 @@ const initdb = async () =>
     },
   });
 
-// TODO: Add logic to a method that accepts some content and adds it to the database
+export const putDb = async (content) => {
+  console.log('Put to the Database');
 
-export const putDb = async (_content) => {
-  const contactDB = await openDB('jate', 1);
-  const tx = contactDB.transaction('jate', 'readwrite');
-  const store = tx.objectStore('jate');
-  const request = store.put({ id: 1, value: _content });
-  const result = await request;
-  console.log('🤖 - The data has been saved to the database. - 📓', result);
-}
-   
-
-// TODO: Add logic for a method that gets all the content from the database
-export const getDb = async () => {
-  console.error('getDb not implemented');
-
-  // Create connection to the database and get all the content from the database and return it  
+  // Create a connection to the database database and version we want to use.
   const contactDb = await openDB('jate', 1);
 
-  // Create a transaction and get the object store
-  const txt = contactDB.transaction('jate', 'readonly');
+  // Create a new transaction and specify the database and data privileges.
+  const tx = contactDb.transaction('jate', 'readwrite');
 
-  // Get the object store
-  const _store = txt.objectStore('jate')
+  // Open up the desired object store.
+  const store = tx.objectStore('jate');
 
-  // get all the content from the database and return it as an array of objects
-  const _request = _store.getAll();
-
-  // Confirm that the data has been retrieved from the database
-  const _result = await _request;
-  console.log('🤖 - The data has been retrieved from the database. - 📓', _result);
-  return _result?.value;
-  
+  const request = store.put({id: 1,value: content});
+  const result = await request;
+  console.log('Saved to Database', result);
 };
 
+export const getDb = async () => {
+  console.log('Get to the Database')
+
+  // Create a connection to the database database and version we want to use.
+  const contactDb = await openDB('jate', 1);
+
+  // Create a new transaction and specify the database and data privileges.
+  const tx = contactDb.transaction('jate', 'readonly');
+
+  // Open up the desired object store.
+  const store = tx.objectStore('jate');
+
+  // Use the .getAll() method to get all data in the database.
+  const request = store.get(1);
+
+  // // Get confirmation of the request.
+  const result = await request;
+  console.log('result.value', result);
+  return result?.value;
+};
 
 initdb();

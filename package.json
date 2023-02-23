@@ -1,12 +1,8 @@
 {
   "name": "jate",
   "version": "1.0.0",
-  "engines": {
-    "node": "18.13.0",
-    "npm": "8.19.3"
-  },
-  "description": "JATE -The Progressive Web Applications (PWA): Text Editor project is a web-based text editor designed to provide a fast, responsive, and user-friendly editing experience. It is built using the latest web technologies, including HTML5, CSS3, and JavaScript, and can be installed as a standalone application on any device with a modern web browser",
-  "main": "server/server.js",
+  "description": "The Progressive Web Applications (PWA)",
+  "main": "server.js",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
     "start": "npm run build && cd server && node server.js",
@@ -19,17 +15,12 @@
   "author": "Bryan A Quero",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2",
-    "flux": "^4.0.3",
-    "idb": "^7.1.1",
-    "if-env": "^1.0.4",
-    "react": "^18.2.0"
+    "express": "^4.17.1",
+    "if-env": "^1.0.4"
   },
   "devDependencies": {
-    "concurrently": "^5.3.0",
-    "nodemon": "^2.0.20",
-    "webpack": "^5.75.0",
-    "webpack-dev-server": "^4.11.1"
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
   },
   "repository": {
     "type": "git",
